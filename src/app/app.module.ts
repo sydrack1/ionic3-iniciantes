@@ -14,6 +14,12 @@ import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
 import { HttpModule } from '@angular/http';
 import { MovieProvider } from '../providers/movie/movie';
+/*import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
+import { PerfilPage } from '../pages/perfil/perfil';
+import { SobrePage } from '../pages/sobre/sobre';*/
+import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
+import { PerfilPageModule } from '../pages/perfil/perfil.module';
+import { SobrePageModule } from '../pages/sobre/sobre.module';
 
 
 
@@ -23,14 +29,20 @@ import { MovieProvider } from '../providers/movie/movie';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    /*ConfiguracoesPage,
+    PerfilPage,
+    SobrePage*/
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule,
-    HttpModule
+    HttpModule,
+    ConfiguracoesPageModule,
+    PerfilPageModule,
+    SobrePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,7 +56,7 @@ import { MovieProvider } from '../providers/movie/movie';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    //MovieProvider
+    MovieProvider
   ]
 })
 export class AppModule {}
