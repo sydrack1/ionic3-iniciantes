@@ -20,6 +20,7 @@ import { SobrePage } from '../pages/sobre/sobre';*/
 import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { SobrePageModule } from '../pages/sobre/sobre.module';
+import { FilmeDetalhePageModule } from '../pages/filme-detalhe/filme-detalhe.module';
 
 
 
@@ -42,7 +43,8 @@ import { SobrePageModule } from '../pages/sobre/sobre.module';
     HttpModule,
     ConfiguracoesPageModule,
     PerfilPageModule,
-    SobrePageModule
+    SobrePageModule,
+    FilmeDetalhePageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
